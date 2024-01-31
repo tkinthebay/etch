@@ -40,3 +40,11 @@ button = document.createElement("button");
 button.textContent = "size";
 
 document.body.prepend(button);
+
+
+button.addEventListener("click", function(){
+    let numSquare = prompt("How many squares do you want on each side of the grid?");
+    container.replaceChildren();
+    createGrid(numSquare);
+}
+);
