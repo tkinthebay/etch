@@ -10,6 +10,8 @@ for (let i=1; i <= (numSquare**2); i++) {
     square.textContent=i;
     square.style.flexBasis=`${(1/(numSquare)*100)}%`;
     square.style.flexGrow=`1`;
+    container.style.width=`${numSquare*(640/numSquare)}px`;
+    container.style.height=`${numSquare*(640/numSquare)}px`;
     container.appendChild(square);
 } ;
 };
