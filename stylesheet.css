@@ -1,4 +1,10 @@
 #container {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
+
+/* .square {
+    flex-basis: 50%;
+    flex-grow: 1;
+} */
