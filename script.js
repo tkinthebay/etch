@@ -21,7 +21,10 @@ createGrid(16);
 container.addEventListener('mouseover', function(e) {
     let element = e.target;
     // console.log(element);
-    element.style.backgroundColor="black";
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    console.log(randomColor);
+    console.log(typeof(randomColor));
+    element.style.backgroundColor="#"+randomColor;
 })
 
 button = document.createElement("button");
