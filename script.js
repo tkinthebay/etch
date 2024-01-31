@@ -7,7 +7,7 @@ for (let i=1; i <= (numSquare**2); i++) {
 
     const square = document.createElement("div");
     square.className = "square";
-    square.textContent=i;
+    // square.textContent=i;
     square.style.flexBasis=`${(1/(numSquare)*100)}%`;
     square.style.flexGrow=`1`;
     container.style.width=`${numSquare*(640/numSquare)}px`;
@@ -27,13 +27,13 @@ container.addEventListener('mouseover', function(e) {
     element.style.backgroundColor="#"+randomColor;
 })
 
-button = document.createElement("button");
-button.textContent = "size";
+buttonSize = document.createElement("button");
+buttonSize.textContent = "change size";
 
-document.body.prepend(button);
+document.body.prepend(buttonSize);
 
 
-button.addEventListener("click", function(){
+buttonSize.addEventListener("click", function(){
     let numSquare = prompt("How many squares do you want on each side of the grid?");
     // console.log(numSquare);
     // console.log(Number(numSquare));
