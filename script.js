@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+container.style.backgroundColor="red";
 // container.style.maxWidth = "1000px";
 
 function createGrid (numSquare) {

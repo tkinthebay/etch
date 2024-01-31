@@ -2,9 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    width: 50%;
+    overflow: hidden;
 }
 
-/* .square {
-    flex-basis: 50%;
-    flex-grow: 1;
-} */
+.square {
+text-align: center;
+}
