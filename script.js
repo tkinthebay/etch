@@ -1,6 +1,5 @@
 const container = document.getElementById("container");
 container.style.backgroundColor="red";
-// container.style.maxWidth = "1000px";
 
 
 function createGrid (numSquare) {
@@ -17,22 +16,9 @@ for (let i=1; i <= (numSquare**2); i++) {
 
 createGrid(16);
 
-// const grid = document.getElementsByClassName("square");
-// console.log(gebcn);
-
-// const grid = document.querySelector(".square");
-// console.log(grid);
-
-// grid.addEventListener("mouseover", function(){
-//     // console.log(EventTarget);
-//     grid.style.backgroundColor="black";
-// });
-
 container.addEventListener('mouseover', function(e) {
-    element = e.target;
-    // console.log(`element is ${element}`)
-    console.log(element);
-    // console.log(document.elementFromPoint(e.clientX, e.clientY)); 
+    let element = e.target;
+    // console.log(element);
     element.style.backgroundColor="black";
 })
 
