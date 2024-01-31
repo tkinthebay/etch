@@ -32,6 +32,17 @@ document.body.prepend(button);
 
 button.addEventListener("click", function(){
     let numSquare = prompt("How many squares do you want on each side of the grid?");
+    // console.log(numSquare);
+    // console.log(Number(numSquare));
+    // console.log(`Number(numSquare)>100 is ${Number(numSquare)>100}`);
+    // console.log(`Number(numSquare)<=0 is ${Number(numSquare)<=0}`);
+    // console.log(`Number(numSquare)==NaN is ${Number(numSquare)==NaN}`);
+    // console.log(`Number(numSquare) is a number between 1 and 100 is ${Number(numSquare)>0 && Number(numSquare)<=100}`);
+
+    while ((Number(numSquare)>0 && Number(numSquare)<=100)!=true) {
+        numSquare=prompt("The range of possible squares is from 1 to 100. Please enter a number from 1 to 100.");
+        console.log(numSquare);
+    }
     container.replaceChildren();
     createGrid(numSquare);
 }
