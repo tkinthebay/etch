@@ -28,8 +28,9 @@ createGrid(16);
 //     grid.style.backgroundColor="black";
 // });
 
-document.addEventListener('mouseover', function(e) {
+container.addEventListener('mouseover', function(e) {
     element = e.target;
-    console.log(`element is ${element}`)
-    console.log(document.elementFromPoint(e.clientX, e.clientY)); 
+    // console.log(`element is ${element}`)
+    console.log(element);
+    // console.log(document.elementFromPoint(e.clientX, e.clientY)); 
 })
